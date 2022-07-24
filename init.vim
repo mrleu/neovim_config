@@ -17,6 +17,7 @@ Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'https://github.com/tc50cal/vim-terminal'
 Plug 'https://github.com/terryma/vim-multiple-cursors'
 Plug 'https://github.com/neoclide/coc.nvim'
+Plug 'https://github.com/shaunsingh/nord.nvim'
 call plug#end()
 
 nnoremap <C-f> :NERDTreeFocus<CR>
@@ -24,7 +25,13 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 
-:colorscheme afterglow
+" Example config in Vim-Script
+let g:nord_contrast = v:true
+let g:nord_borders = v:false
+let g:nord_disable_background = v:false
+let g:nord_italic = v:false
+let g:nord_uniform_diff_background = v:true
+:colorscheme Nord
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
